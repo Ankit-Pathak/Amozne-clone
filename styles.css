@@ -1,0 +1,419 @@
+:root{
+    --context:14.4;
+}
+*{
+    margin: 0;
+    font-family: Arial;
+    border: border-box;
+    }
+    body{
+        background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 3%, rgba(74,13,124,1) 0%, rgba(31,9,121,1) 1%, rgba(0,212,255,0.3254551820728291) 53%, rgba(0,212,255,0.3254551820728291) 80%, rgba(0,212,255,0.3254551820728291) 92%);
+    }          /* made this bg color using linear linearGradient */
+    
+    /* navbar-------------------------------------------------------------------------------------- */
+    .navbar{
+        height: calc(60vw / var(--context));
+        background-color:#0f1111;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .nav-logo{
+        height:calc(50vw / var(--context));;
+        width: calc(130vw / var(--context));;
+    }
+    .border{
+        border: calc(2vw / var(--context)) solid transparent;
+    }
+    .border:hover{
+        padding: calc(10vw / var(--context));;
+        border: calc(2vw / var(--context)) solid white; 
+    }
+    /* box1 */
+    .amazon-logo{
+        background-image: url("image/amazon_logo.png");
+        background-size: cover;
+        height:calc(40vw / var(--context));;
+        width: 80%;
+        margin-top: calc(2vw / var(--context));
+    }
+    .nav-logo .amazon-logo{
+        border: calc(2vw / var(--context)) solid transparent;
+    }
+    .nav-logo .amazon-logo:hover{
+         
+        border: calc(2vw / var(--context))solid white; 
+    }
+    /* box2 */
+    .add-icon{
+        height:calc(11.2vw / var(--context)) ;
+        display: flex;   
+    }
+    .add-first{
+        font-size:calc(11.2vw / var(--context));
+        color: #CCCCCC;
+        margin-left: calc(12vw / var(--context));
+    }
+    .add-second{
+        font-size: calc(15.2vw / var(--context));
+        font-weight: 700; 
+    }
+    .fa-location-dot:before, .fa-map-marker-alt:before {
+        content: "\f3c5";
+        display: block;
+        font-size: calc(14vw / var(--context));
+        padding-right: calc(2vw / var(--context));
+    }
+    /* box3 */
+    .nav-search{
+        height: calc(40vw / var(--context));
+        width: calc(720vw / var(--context));
+        display: flex;   /* flex bring all content in same line  */
+        justify-content: space-evenly;
+    }
+    .nav-search:hover{
+        border:calc(4vw / var(--context)) solid #febd68;
+        border-radius: calc(8vw / var(--context));
+    }
+    .search-select{
+        width: calc(55vw / var(--context));
+        text-align: center;
+        font-size: calc(16vw / var(--context));
+        background-color: #E6E6E6;
+        border-top-left-radius: calc(4vw / var(--context));
+        border-bottom-left-radius: calc(4vw / var(--context));  /* giving curved edges to select */
+        border: none;          /* removing by default border of select */
+    }
+    .search-input{
+        width: 100%;
+        font-size: calc(16vw / var(--context));
+        border: none;
+    }
+    .search-icon{
+        height: calc(40vw / var(--context));
+        width: calc(50vw / var(--context));
+        border-top-right-radius: calc(4vw / var(--context));
+        border-bottom-right-radius: calc(4vw / var(--context));
+        background-color: #febd68;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: calc(20vw / var(--context));
+    }
+    /* box4 */
+    .USA-flag{
+        background-image: url("image/USA_flag.jpg");
+        background-size: cover;
+        height: calc(18vw / var(--context));
+        width: calc(25vw / var(--context));
+        display: flex;
+    }
+    .nav-country-language p{
+        font-size: calc(12vw / var(--context));
+        
+    }
+    .nav-country-language{
+        display: flex;
+        background-color: #0f1111;
+        align-items: center;
+        gap: calc(5vw / var(--context));;
+    }
+    .select-language{
+        background-color: #0f1111;
+        color: white;
+        font-weight: 600;
+        border: none;
+    }
+    /* box5 */
+    .your-account{
+        font-size: calc(15.2vw / var(--context));
+        font-weight: 700;
+    }
+    .Hello-signIn{
+        font-size: calc(11.2vw / var(--context));
+        border: none;
+    }
+    .select-SignIn{
+        background-color: #0f1111;
+        color: white;
+        border: none;
+    }
+    .sign-in{
+        display: flex;
+    }
+    /* box6 */
+    .return{
+        font-size: calc(11.2vw / var(--context));
+    }
+    .order{
+        font-size: calc(15.2vw / var(--context));
+        font-weight: 700;
+    }
+    /* box7 */
+    .nav_cart{
+        display: flex;
+        font-size: calc(15.2vw / var(--context));
+        font-weight: 700
+    }
+    .nav_cart i{
+        font-size: calc(28vw / var(--context));
+    }
+    .cart{
+        margin-top: calc(12vw / var(--context));
+    }
+    
+    /* panel--------------------------------------------------------------------------------------- */
+    .panel{
+        display: flex;
+        color: white;
+        height: calc(39vw / var(--context));
+        background-color: #222f3d;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .panel-menu{
+        font-size: calc(14.4vw / var(--context));
+        font-weight: 700;
+    }
+    .panel-options{
+        width: 80%;
+    }
+    .panel-options p{
+        display: inline;
+        margin-left: calc(10vw / var(--context));
+        font-size: calc(15.2vw / var(--context));
+    }
+    .panel-deals{
+        font-weight: 700;
+        font-size: calc(15.2vw / var(--context));
+    }
+    
+    /* hero section ------------------------------------------------------------------------------- */
+    .hero-section{
+        background-image:url("image/hero_image3.jpg");
+        background-size: cover;
+        height: calc(350vw / var(--context)); 
+        display: flex;
+        justify-content: center;
+        align-items: flex-end; 
+    } 
+    .hero-msg{
+        height: calc(40vw / var(--context));
+        width: 95%;
+        background-color: white;
+        font-size: 0calc(15.2vw / var(--context));
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: calc(50vw / var(--context));
+    }
+    .hero-msg p{
+        font-size: calc(14vw / var(--context));
+    }
+
+    .hero-msg a{
+        text-decoration: none;
+        color: #007185;
+    }
+    
+    /* all products-------------------------------------------------------------------------------- */
+    .product .container{
+        padding: 0 calc(20vw / var(--context));  /* top-bottom=0 ,left-right=20 */
+    }
+    
+    .product .container .innerwrapper{
+        padding: calc(20vw / var(--context)) 0;
+    }
+    
+    .product .container .innerwrapper .rowbox{
+        display: flex;
+        flex-wrap: wrap;
+        gap: calc(20vw / var(--context)); 
+        justify-content: space-between;
+       
+    }
+    .product .container .innerwrapper .rowbox .row{
+        width: 28%;
+        padding: calc(25vw / var(--context));
+        background-color: white;
+    }
+    .product .container .innerwrapper .rowbox .row img{
+        height: calc(300vw / var(--context));
+        width: 100%;
+    }
+    .product .container .innerwrapper .rowbox .row h1{
+        margin-bottom: calc(10vw / var(--context));
+        font-size: calc(20vw / var(--context)) ;
+    }
+    .product .container .innerwrapper .rowbox .row a{
+        display: inline-block;
+        margin-top: calc(10vw / var(--context));
+        text-decoration: none;
+        font-size: calc(14vw / var(--context));
+    }
+    
+    .best-sellers .container{
+        padding: 0 2calc(20vw / var(--context));  /* top-bottom=0 ,left-right=20 */
+        margin-top: calc(20vw / var(--context));
+    }
+    
+    .best-sellers .container .innerwrapper{
+        padding: calc(20vw / var(--context)) 0;
+        background-color: white;
+    }
+    .swiper-wrapper{
+        display: flex;
+        justify-content: space-between;
+        padding-left: calc(38vw / var(--context));
+    }
+    .best-sellers .swiper-wrapper .swiper-slide{
+        width: 10%;
+    }
+    .best-sellers .container .innerwrapper h1{
+        font-size: calc(20vw / var(--context));
+        margin-bottom: calc(12vw / var(--context));
+        padding-left: calc(38vw / var(--context));
+    }
+    
+    /* sign-in/new customer------------------------------------------------------------------------ */
+    .blank-space{
+        height: calc(30vw / var(--context));
+        width: 100%;
+        border-bottom: calc(2vw / var(--context)) solid #ddd;
+        background-color: white;
+    }
+    .sign-in-button{
+        color: black;
+        background-color: white;
+        display: block;
+        text-align: center;
+        padding-top: calc(40vw / var(--context));
+        padding-bottom: calc(20vw / var(--context));
+        border-bottom: calc(2vw / var(--context)) solid #ddd;
+    }
+    .sign-in-button button{
+        height: calc(30vw / var(--context));
+        width: calc(230vw / var(--context));
+        font-size: calc(9vw / var(--context));
+        font-weight: 700;
+        background: rgb(225,253,29);
+        background: linear-gradient(180deg, rgba(225,253,29,0.7988445378151261) 0%, rgba(248,253,29,0.09296218487394958) 18%, rgba(241,253,29,0.9473039215686274) 100%);
+        border-radius: calc(4vw / var(--context));
+        border-color: #ff9900;
+        margin: calc(8vw / var(--context)) 0;
+    }
+    .below-sign-in{
+        font-size: calc(11.2vw / var(--context));
+    }
+    .above-sign-in{
+        font-size: calc(13.6vw / var(--context));
+    }
+    .sign-in-button a{
+        color: #007185;
+        text-decoration: none;
+    }
+    /* footer-section------------------------------------------------------------------------------ */
+    .footer-1{
+        height: calc(45vw / var(--context));
+        width: 100%;
+        font-size: calc(13vw / var(--context));
+        color: white;
+        background-color: #37475a;
+        text-align: center;
+    }
+    .footer-1 a{
+        color: white;
+        text-decoration: none;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: calc(16vw / var(--context)) 0;
+    }
+    .footer-2{
+        height: calc(280vw / var(--context));
+        width: 100%;
+        background-color:  #222f3d;
+        display: flex;
+        justify-content: space-around;
+        padding-top: calc(40vw / var(--context));
+        border-bottom: calc(2vw / var(--context)) solid #ddd;
+    }
+    ul a{
+        display: block;
+    }
+    .footer-2 p{
+        font-size:calc(16vw / var(--context)) ;
+        color: white;
+        font-weight: 700;
+    }
+    .footer-2 a{
+        font-size: calc(13.6vw / var(--context));
+        color: #dddddd;
+        text-decoration: none;
+        margin-top: calc(10vw / var(--context));
+    }
+    .footer-2 a:hover{
+        text-decoration: underline white;
+    }
+    .footer-3{
+        background-color:  #222f3d;
+        display: flex;
+        justify-content: center;
+        padding-top: calc(30vw / var(--context));
+        padding-bottom: calc(30vw / var(--context));
+    }
+    .footer-3 img{
+        height:calc(30vw / var(--context));
+        width: calc(80vw / var(--context));
+        
+    }
+    .footer3-buttons{
+        margin-left: calc(60vw / var(--context));
+        display: flex;
+        align-items: center;
+    }
+    .footer3-buttons button{
+        height: calc(30vw / var(--context));
+        display: flex;
+        align-items: center;
+        color: white;
+        border: calc(2vw / var(--context)) solid white;
+        border-radius: calc(3vw / var(--context));
+        background-color: #222f3d;
+        margin-right: calc(6vw / var(--context));
+        gap: calc(2vw / var(--context));
+    }
+    .footer3-buttons img{
+        height: calc(10vw / var(--context));
+        width: calc(15vw / var(--context));
+    }
+    .footer3-buttons button p{
+        font-size: calc(10vw / var(--context));
+    }
+    .footer-4{
+        height: calc(100vw / var(--context));
+        width: 100%;
+        background-color: #131A22;
+        text-align: center;
+        justify-content: center;
+        padding-top: calc(50vw / var(--context));
+    }
+    .footer-4 .footer-privacy a{
+        color: white;
+        text-decoration: none;
+        font-size: calc(14.4vw / var(--context));
+    }
+    .footer-4 .footer-copyrigth{
+        color: white;
+        font-size: calc(12.8vw / var(--context));
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+      
+    
+    
+
